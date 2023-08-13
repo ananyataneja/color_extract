@@ -1,10 +1,10 @@
 import streamlit as st
 import numpy as np
-import matplotlib.pyplot as plt
 st.title("Dominant Color Extraction")
 st.subheader("Input Image")
 img= st.file_uploader("Choose an image")
 if img is not None: 
+    import matplotlib.pyplot as plt
     st.header("Orignal Image")
     st.image(img) # display the uploaded image
     img=plt.imread(img)
