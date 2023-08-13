@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 from matplotlib import pyplot as plt 
-
 st.title("Dominant Color Extraction")
 st.subheader("Input Image")
 img= st.file_uploader("Choose an image")
