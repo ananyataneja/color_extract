@@ -19,6 +19,5 @@ if img is not None:
         group_idx = model.labels_[i]
         new[i] = centers[group_idx]
     new = new.reshape(*img.shape)
-
     st.header("Modified Image")
     st.image(new)
