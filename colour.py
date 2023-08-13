@@ -1,16 +1,15 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from matplotlib import pyplot as plt 
 
 st.title("Dominant Color Extraction")
 st.subheader("Input Image")
 img= st.file_uploader("Choose an image")
-if img is not None: # it has been uploaded
+if img is not None: 
     st.header("Orignal Image")
     st.image(img) # display the uploaded image
 
-    #K-Means Code
+    from matplotlib import pyplot as plt 
     img=plt.imread(img)
     n = img.shape[0]*img.shape[1] #len x breadth
     all_pixels = img.reshape((n, 3)) 
